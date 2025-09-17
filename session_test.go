@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-package abov3_test
+package opencode_test
 
 import (
 	"context"
@@ -22,16 +22,16 @@ func TestSessionNewWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
-	_, err := client.Session.New(context.TODO(), opencode.SessionNewParams{
-		Directory: opencode.F("directory"),
-		ParentID:  opencode.F("parentID"),
-		Title:     opencode.F("title"),
+	_, err := client.Session.New(context.TODO(), abov3.SessionNewParams{
+		Directory: abov3.F("directory"),
+		ParentID:  abov3.F("parentID"),
+		Title:     abov3.F("title"),
 	})
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -48,19 +48,19 @@ func TestSessionUpdateWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
 	_, err := client.Session.Update(
 		context.TODO(),
 		"id",
-		opencode.SessionUpdateParams{
-			Directory: opencode.F("directory"),
-			Title:     opencode.F("title"),
+		abov3.SessionUpdateParams{
+			Directory: abov3.F("directory"),
+			Title:     abov3.F("title"),
 		},
 	)
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -77,14 +77,14 @@ func TestSessionListWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
-	_, err := client.Session.List(context.TODO(), opencode.SessionListParams{
-		Directory: opencode.F("directory"),
+	_, err := client.Session.List(context.TODO(), abov3.SessionListParams{
+		Directory: abov3.F("directory"),
 	})
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -101,18 +101,18 @@ func TestSessionDeleteWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
 	_, err := client.Session.Delete(
 		context.TODO(),
 		"id",
-		opencode.SessionDeleteParams{
-			Directory: opencode.F("directory"),
+		abov3.SessionDeleteParams{
+			Directory: abov3.F("directory"),
 		},
 	)
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -129,18 +129,18 @@ func TestSessionAbortWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
 	_, err := client.Session.Abort(
 		context.TODO(),
 		"id",
-		opencode.SessionAbortParams{
-			Directory: opencode.F("directory"),
+		abov3.SessionAbortParams{
+			Directory: abov3.F("directory"),
 		},
 	)
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -157,18 +157,18 @@ func TestSessionChildrenWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
 	_, err := client.Session.Children(
 		context.TODO(),
 		"id",
-		opencode.SessionChildrenParams{
-			Directory: opencode.F("directory"),
+		abov3.SessionChildrenParams{
+			Directory: abov3.F("directory"),
 		},
 	)
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -185,23 +185,23 @@ func TestSessionCommandWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
 	_, err := client.Session.Command(
 		context.TODO(),
 		"id",
-		opencode.SessionCommandParams{
-			Arguments: opencode.F("arguments"),
-			Command:   opencode.F("command"),
-			Directory: opencode.F("directory"),
-			Agent:     opencode.F("agent"),
-			MessageID: opencode.F("msgJ!"),
-			Model:     opencode.F("model"),
+		abov3.SessionCommandParams{
+			Arguments: abov3.F("arguments"),
+			Command:   abov3.F("command"),
+			Directory: abov3.F("directory"),
+			Agent:     abov3.F("agent"),
+			MessageID: abov3.F("msgJ!"),
+			Model:     abov3.F("model"),
 		},
 	)
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -218,18 +218,18 @@ func TestSessionGetWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
 	_, err := client.Session.Get(
 		context.TODO(),
 		"id",
-		opencode.SessionGetParams{
-			Directory: opencode.F("directory"),
+		abov3.SessionGetParams{
+			Directory: abov3.F("directory"),
 		},
 	)
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -246,21 +246,21 @@ func TestSessionInitWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
 	_, err := client.Session.Init(
 		context.TODO(),
 		"id",
-		opencode.SessionInitParams{
-			MessageID:  opencode.F("messageID"),
-			ModelID:    opencode.F("modelID"),
-			ProviderID: opencode.F("providerID"),
-			Directory:  opencode.F("directory"),
+		abov3.SessionInitParams{
+			MessageID:  abov3.F("messageID"),
+			ModelID:    abov3.F("modelID"),
+			ProviderID: abov3.F("providerID"),
+			Directory:  abov3.F("directory"),
 		},
 	)
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -277,19 +277,19 @@ func TestSessionMessageWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
 	_, err := client.Session.Message(
 		context.TODO(),
 		"id",
 		"messageID",
-		opencode.SessionMessageParams{
-			Directory: opencode.F("directory"),
+		abov3.SessionMessageParams{
+			Directory: abov3.F("directory"),
 		},
 	)
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -306,18 +306,18 @@ func TestSessionMessagesWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
 	_, err := client.Session.Messages(
 		context.TODO(),
 		"id",
-		opencode.SessionMessagesParams{
-			Directory: opencode.F("directory"),
+		abov3.SessionMessagesParams{
+			Directory: abov3.F("directory"),
 		},
 	)
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -334,38 +334,38 @@ func TestSessionPromptWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
 	_, err := client.Session.Prompt(
 		context.TODO(),
 		"id",
-		opencode.SessionPromptParams{
-			Parts: opencode.F([]opencode.SessionPromptParamsPartUnion{opencode.TextPartInputParam{
-				Text:      opencode.F("text"),
-				Type:      opencode.F(opencode.TextPartInputTypeText),
-				ID:        opencode.F("id"),
-				Synthetic: opencode.F(true),
-				Time: opencode.F(opencode.TextPartInputTimeParam{
-					Start: opencode.F(0.000000),
-					End:   opencode.F(0.000000),
+		abov3.SessionPromptParams{
+			Parts: abov3.F([]abov3.SessionPromptParamsPartUnion{abov3.TextPartInputParam{
+				Text:      abov3.F("text"),
+				Type:      abov3.F(abov3.TextPartInputTypeText),
+				ID:        abov3.F("id"),
+				Synthetic: abov3.F(true),
+				Time: abov3.F(abov3.TextPartInputTimeParam{
+					Start: abov3.F(0.000000),
+					End:   abov3.F(0.000000),
 				}),
 			}}),
-			Directory: opencode.F("directory"),
-			Agent:     opencode.F("agent"),
-			MessageID: opencode.F("msgJ!"),
-			Model: opencode.F(opencode.SessionPromptParamsModel{
-				ModelID:    opencode.F("modelID"),
-				ProviderID: opencode.F("providerID"),
+			Directory: abov3.F("directory"),
+			Agent:     abov3.F("agent"),
+			MessageID: abov3.F("msgJ!"),
+			Model: abov3.F(abov3.SessionPromptParamsModel{
+				ModelID:    abov3.F("modelID"),
+				ProviderID: abov3.F("providerID"),
 			}),
-			System: opencode.F("system"),
-			Tools: opencode.F(map[string]bool{
+			System: abov3.F("system"),
+			Tools: abov3.F(map[string]bool{
 				"foo": true,
 			}),
 		},
 	)
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -382,20 +382,20 @@ func TestSessionRevertWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
 	_, err := client.Session.Revert(
 		context.TODO(),
 		"id",
-		opencode.SessionRevertParams{
-			MessageID: opencode.F("msgJ!"),
-			Directory: opencode.F("directory"),
-			PartID:    opencode.F("prtJ!"),
+		abov3.SessionRevertParams{
+			MessageID: abov3.F("msgJ!"),
+			Directory: abov3.F("directory"),
+			PartID:    abov3.F("prtJ!"),
 		},
 	)
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -412,18 +412,18 @@ func TestSessionShareWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
 	_, err := client.Session.Share(
 		context.TODO(),
 		"id",
-		opencode.SessionShareParams{
-			Directory: opencode.F("directory"),
+		abov3.SessionShareParams{
+			Directory: abov3.F("directory"),
 		},
 	)
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -440,20 +440,20 @@ func TestSessionShellWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
 	_, err := client.Session.Shell(
 		context.TODO(),
 		"id",
-		opencode.SessionShellParams{
-			Agent:     opencode.F("agent"),
-			Command:   opencode.F("command"),
-			Directory: opencode.F("directory"),
+		abov3.SessionShellParams{
+			Agent:     abov3.F("agent"),
+			Command:   abov3.F("command"),
+			Directory: abov3.F("directory"),
 		},
 	)
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -470,20 +470,20 @@ func TestSessionSummarizeWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
 	_, err := client.Session.Summarize(
 		context.TODO(),
 		"id",
-		opencode.SessionSummarizeParams{
-			ModelID:    opencode.F("modelID"),
-			ProviderID: opencode.F("providerID"),
-			Directory:  opencode.F("directory"),
+		abov3.SessionSummarizeParams{
+			ModelID:    abov3.F("modelID"),
+			ProviderID: abov3.F("providerID"),
+			Directory:  abov3.F("directory"),
 		},
 	)
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -500,18 +500,18 @@ func TestSessionUnrevertWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
 	_, err := client.Session.Unrevert(
 		context.TODO(),
 		"id",
-		opencode.SessionUnrevertParams{
-			Directory: opencode.F("directory"),
+		abov3.SessionUnrevertParams{
+			Directory: abov3.F("directory"),
 		},
 	)
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -528,18 +528,18 @@ func TestSessionUnshareWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
 	_, err := client.Session.Unshare(
 		context.TODO(),
 		"id",
-		opencode.SessionUnshareParams{
-			Directory: opencode.F("directory"),
+		abov3.SessionUnshareParams{
+			Directory: abov3.F("directory"),
 		},
 	)
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}

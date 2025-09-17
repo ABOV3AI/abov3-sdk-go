@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-package abov3_test
+package opencode_test
 
 import (
 	"context"
@@ -22,14 +22,14 @@ func TestCommandListWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
-	_, err := client.Command.List(context.TODO(), opencode.CommandListParams{
-		Directory: opencode.F("directory"),
+	_, err := client.Command.List(context.TODO(), abov3.CommandListParams{
+		Directory: abov3.F("directory"),
 	})
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}

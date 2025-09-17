@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-package abov3_test
+package opencode_test
 
 import (
 	"context"
@@ -22,15 +22,15 @@ func TestFindFilesWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
-	_, err := client.Find.Files(context.TODO(), opencode.FindFilesParams{
-		Query:     opencode.F("query"),
-		Directory: opencode.F("directory"),
+	_, err := client.Find.Files(context.TODO(), abov3.FindFilesParams{
+		Query:     abov3.F("query"),
+		Directory: abov3.F("directory"),
 	})
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -47,15 +47,15 @@ func TestFindSymbolsWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
-	_, err := client.Find.Symbols(context.TODO(), opencode.FindSymbolsParams{
-		Query:     opencode.F("query"),
-		Directory: opencode.F("directory"),
+	_, err := client.Find.Symbols(context.TODO(), abov3.FindSymbolsParams{
+		Query:     abov3.F("query"),
+		Directory: abov3.F("directory"),
 	})
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -72,15 +72,15 @@ func TestFindTextWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
-	_, err := client.Find.Text(context.TODO(), opencode.FindTextParams{
-		Pattern:   opencode.F("pattern"),
-		Directory: opencode.F("directory"),
+	_, err := client.Find.Text(context.TODO(), abov3.FindTextParams{
+		Pattern:   abov3.F("pattern"),
+		Directory: abov3.F("directory"),
 	})
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}

@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-package abov3_test
+package opencode_test
 
 import (
 	"context"
@@ -22,20 +22,20 @@ func TestSessionPermissionRespondWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
 	_, err := client.Session.Permissions.Respond(
 		context.TODO(),
 		"id",
 		"permissionID",
-		opencode.SessionPermissionRespondParams{
-			Response:  opencode.F(opencode.SessionPermissionRespondParamsResponseOnce),
-			Directory: opencode.F("directory"),
+		abov3.SessionPermissionRespondParams{
+			Response:  abov3.F(abov3.SessionPermissionRespondParamsResponseOnce),
+			Directory: abov3.F("directory"),
 		},
 	)
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}

@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-package abov3_test
+package opencode_test
 
 import (
 	"context"
@@ -22,15 +22,15 @@ func TestTuiAppendPromptWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
-	_, err := client.Tui.AppendPrompt(context.TODO(), opencode.TuiAppendPromptParams{
-		Text:      opencode.F("text"),
-		Directory: opencode.F("directory"),
+	_, err := client.Tui.AppendPrompt(context.TODO(), abov3.TuiAppendPromptParams{
+		Text:      abov3.F("text"),
+		Directory: abov3.F("directory"),
 	})
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -47,14 +47,14 @@ func TestTuiClearPromptWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
-	_, err := client.Tui.ClearPrompt(context.TODO(), opencode.TuiClearPromptParams{
-		Directory: opencode.F("directory"),
+	_, err := client.Tui.ClearPrompt(context.TODO(), abov3.TuiClearPromptParams{
+		Directory: abov3.F("directory"),
 	})
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -71,15 +71,15 @@ func TestTuiExecuteCommandWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
-	_, err := client.Tui.ExecuteCommand(context.TODO(), opencode.TuiExecuteCommandParams{
-		Command:   opencode.F("command"),
-		Directory: opencode.F("directory"),
+	_, err := client.Tui.ExecuteCommand(context.TODO(), abov3.TuiExecuteCommandParams{
+		Command:   abov3.F("command"),
+		Directory: abov3.F("directory"),
 	})
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -96,14 +96,14 @@ func TestTuiOpenHelpWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
-	_, err := client.Tui.OpenHelp(context.TODO(), opencode.TuiOpenHelpParams{
-		Directory: opencode.F("directory"),
+	_, err := client.Tui.OpenHelp(context.TODO(), abov3.TuiOpenHelpParams{
+		Directory: abov3.F("directory"),
 	})
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -120,14 +120,14 @@ func TestTuiOpenModelsWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
-	_, err := client.Tui.OpenModels(context.TODO(), opencode.TuiOpenModelsParams{
-		Directory: opencode.F("directory"),
+	_, err := client.Tui.OpenModels(context.TODO(), abov3.TuiOpenModelsParams{
+		Directory: abov3.F("directory"),
 	})
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -144,14 +144,14 @@ func TestTuiOpenSessionsWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
-	_, err := client.Tui.OpenSessions(context.TODO(), opencode.TuiOpenSessionsParams{
-		Directory: opencode.F("directory"),
+	_, err := client.Tui.OpenSessions(context.TODO(), abov3.TuiOpenSessionsParams{
+		Directory: abov3.F("directory"),
 	})
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -168,14 +168,14 @@ func TestTuiOpenThemesWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
-	_, err := client.Tui.OpenThemes(context.TODO(), opencode.TuiOpenThemesParams{
-		Directory: opencode.F("directory"),
+	_, err := client.Tui.OpenThemes(context.TODO(), abov3.TuiOpenThemesParams{
+		Directory: abov3.F("directory"),
 	})
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -192,17 +192,17 @@ func TestTuiShowToastWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
-	_, err := client.Tui.ShowToast(context.TODO(), opencode.TuiShowToastParams{
-		Message:   opencode.F("message"),
-		Variant:   opencode.F(opencode.TuiShowToastParamsVariantInfo),
-		Directory: opencode.F("directory"),
-		Title:     opencode.F("title"),
+	_, err := client.Tui.ShowToast(context.TODO(), abov3.TuiShowToastParams{
+		Message:   abov3.F("message"),
+		Variant:   abov3.F(abov3.TuiShowToastParamsVariantInfo),
+		Directory: abov3.F("directory"),
+		Title:     abov3.F("title"),
 	})
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -219,14 +219,14 @@ func TestTuiSubmitPromptWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
-	_, err := client.Tui.SubmitPrompt(context.TODO(), opencode.TuiSubmitPromptParams{
-		Directory: opencode.F("directory"),
+	_, err := client.Tui.SubmitPrompt(context.TODO(), abov3.TuiSubmitPromptParams{
+		Directory: abov3.F("directory"),
 	})
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}

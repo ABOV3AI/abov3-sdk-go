@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-package abov3_test
+package opencode_test
 
 import (
 	"context"
@@ -22,14 +22,14 @@ func TestProjectListWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
-	_, err := client.Project.List(context.TODO(), opencode.ProjectListParams{
-		Directory: opencode.F("directory"),
+	_, err := client.Project.List(context.TODO(), abov3.ProjectListParams{
+		Directory: abov3.F("directory"),
 	})
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}
@@ -46,14 +46,14 @@ func TestProjectCurrentWithOptionalParams(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
-	_, err := client.Project.Current(context.TODO(), opencode.ProjectCurrentParams{
-		Directory: opencode.F("directory"),
+	_, err := client.Project.Current(context.TODO(), abov3.ProjectCurrentParams{
+		Directory: abov3.F("directory"),
 	})
 	if err != nil {
-		var apierr *opencode.Error
+		var apierr *abov3.Error
 		if errors.As(err, &apierr) {
 			t.Log(string(apierr.DumpRequest(true)))
 		}

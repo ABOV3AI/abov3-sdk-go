@@ -20,10 +20,10 @@ func TestUsage(t *testing.T) {
 	if !testutil.CheckTestServer(t, baseURL) {
 		return
 	}
-	client := opencode.NewClient(
+	client := abov3.NewClient(
 		option.WithBaseURL(baseURL),
 	)
-	sessions, err := client.Session.List(context.TODO(), opencode.SessionListParams{})
+	sessions, err := client.Session.List(context.TODO(), abov3.SessionListParams{})
 	if err != nil {
 		t.Error(err)
 		return

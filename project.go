@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-package abov3
+package opencode
 
 import (
 	"context"
@@ -15,7 +15,7 @@ import (
 )
 
 // ProjectService contains methods and other services that help with interacting
-// with the opencode API.
+// with the ABOV3 API.
 //
 // Note, unlike clients, this service does not read variables from the environment
 // automatically. You should not instantiate this service directly, and instead use
