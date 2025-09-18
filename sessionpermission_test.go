@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-package opencode_test
+package abov3_test
 
 import (
 	"context"

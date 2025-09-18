@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-package opencode_test
+package abov3_test
 
 import (
 	"context"
@@ -39,7 +39,7 @@ func TestUserAgentHeader(t *testing.T) {
 		}),
 	)
 	client.Session.List(context.Background(), abov3.SessionListParams{})
-	if userAgent != fmt.Sprintf("Opencode/Go %s", internal.PackageVersion) {
+	if userAgent != fmt.Sprintf("Abov3/Go %s", internal.PackageVersion) {
 		t.Errorf("Expected User-Agent to be correct, but got: %#v", userAgent)
 	}
 }

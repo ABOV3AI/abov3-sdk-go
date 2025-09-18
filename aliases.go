@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-package opencode
+package abov3
 
 import (
 	"github.com/fajardofahad/abov3-sdk-go/internal/apierror"

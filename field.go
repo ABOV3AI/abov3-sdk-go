@@ -1,4 +1,4 @@
-package opencode
+package abov3
 
 import (
 	"github.com/fajardofahad/abov3-sdk-go/internal/param"
