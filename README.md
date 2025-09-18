@@ -1,11 +1,11 @@
-# abov3 Go API Library
+# ABOV3 Go SDK - Genesis CodeForger Edition
 
 <a href="https://pkg.go.dev/github.com/fajardofahad/abov3-sdk-go"><img src="https://pkg.go.dev/badge/github.com/fajardofahad/abov3-sdk-go.svg" alt="Go Reference"></a>
 
-The abov3 Go library provides convenient access to the [abov3 REST API](https://abov3.ai/docs)
-from applications written in Go.
+The official Go SDK for ABOV3 AI - Genesis CodeForger Edition. This library provides convenient access to the ABOV3 REST API from Go applications.
 
-It is generated with [Stainless](https://www.stainless.com/).
+**Official Website:** [https://www.abov3.ai](https://www.abov3.ai)
+**ABOV3 Team:** [https://www.abov3.com](https://www.abov3.com)
 
 ## Installation
 
