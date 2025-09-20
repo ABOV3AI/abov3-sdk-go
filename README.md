@@ -24,7 +24,7 @@ Or to pin the version:
 <!-- x-release-please-start-version -->
 
 ```sh
-go get -u 'github.com/fajardofahad/abov3-sdk-go@v0.1.1'
+go get -u 'github.com/fajardofahad/abov3-sdk-go@v0.1.4'
 ```
 
 <!-- x-release-please-end -->
@@ -346,6 +346,22 @@ You may also replace the default `http.Client` with
 `option.WithHTTPClient(client)`. Only one http client is
 accepted (this overwrites any previous client) and receives requests after any
 middleware has been applied.
+
+## What's New in v0.1.4
+
+### TUI Configuration Management
+The TUI now includes comprehensive configuration management commands:
+- Interactive configuration dialogs with form inputs
+- Provider management (add, edit, enable/disable, remove)
+- MCP server configuration
+- System health checks and validation
+- Scrollable configuration viewer
+
+### Features
+- Real-time configuration updates
+- Form-based input for adding providers and MCP servers
+- Health diagnostics with `config doctor` command
+- Configuration validation with detailed error reporting
 
 ## Semantic versioning
 
