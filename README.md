@@ -1,11 +1,11 @@
-# ABOV3 Go SDK - Genesis CodeForger Edition
+# abov3 Go API Library
 
 <a href="https://pkg.go.dev/github.com/fajardofahad/abov3-sdk-go"><img src="https://pkg.go.dev/badge/github.com/fajardofahad/abov3-sdk-go.svg" alt="Go Reference"></a>
 
-The official Go SDK for ABOV3 AI - Genesis CodeForger Edition. This library provides convenient access to the ABOV3 REST API from Go applications.
+The abov3 Go library provides convenient access to the [abov3 REST API](https://abov3.ai/docs)
+from applications written in Go.
 
-**Official Website:** [https://www.abov3.ai](https://www.abov3.ai)
-**ABOV3 Team:** [https://www.abov3.com](https://www.abov3.com)
+It is generated with [Stainless](https://www.stainless.com/).
 
 ## Installation
 
@@ -24,7 +24,7 @@ Or to pin the version:
 <!-- x-release-please-start-version -->
 
 ```sh
-go get -u 'github.com/fajardofahad/abov3-sdk-go@v0.1.4'
+go get -u 'github.com/fajardofahad/abov3-sdk-go@v0.13.0'
 ```
 
 <!-- x-release-please-end -->
@@ -346,22 +346,6 @@ You may also replace the default `http.Client` with
 `option.WithHTTPClient(client)`. Only one http client is
 accepted (this overwrites any previous client) and receives requests after any
 middleware has been applied.
-
-## What's New in v0.1.4
-
-### TUI Configuration Management
-The TUI now includes comprehensive configuration management commands:
-- Interactive configuration dialogs with form inputs
-- Provider management (add, edit, enable/disable, remove)
-- MCP server configuration
-- System health checks and validation
-- Scrollable configuration viewer
-
-### Features
-- Real-time configuration updates
-- Form-based input for adding providers and MCP servers
-- Health diagnostics with `config doctor` command
-- Configuration validation with detailed error reporting
 
 ## Semantic versioning
 

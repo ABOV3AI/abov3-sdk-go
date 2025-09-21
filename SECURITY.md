@@ -20,7 +20,7 @@ or products provided by abov3, please follow the respective company's security r
 
 ### abov3 Terms and Policies
 
-Please contact support@sst.dev for any questions or concerns regarding the security of our services.
+Please contact support@abov3.com for any questions or concerns regarding the security of our services.
 
 ---
 
