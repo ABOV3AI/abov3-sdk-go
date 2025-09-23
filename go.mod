@@ -1,4 +1,4 @@
-module github.com/fajardofahad/abov3-sdk-go
+module github.com/ABOV3AI/abov3-sdk-go
 
 go 1.21
 

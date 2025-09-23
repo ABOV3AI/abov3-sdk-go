@@ -3,7 +3,7 @@
 package shared
 
 import (
-	"github.com/fajardofahad/abov3-sdk-go/internal/apijson"
+	"github.com/ABOV3AI/abov3-sdk-go/internal/apijson"
 )
 
 type MessageAbortedError struct {

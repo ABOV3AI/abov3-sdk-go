@@ -7,9 +7,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/fajardofahad/abov3-sdk-go"
-	"github.com/fajardofahad/abov3-sdk-go/internal/testutil"
-	"github.com/fajardofahad/abov3-sdk-go/option"
+	"github.com/ABOV3AI/abov3-sdk-go"
+	"github.com/ABOV3AI/abov3-sdk-go/internal/testutil"
+	"github.com/ABOV3AI/abov3-sdk-go/option"
 )
 
 func TestUsage(t *testing.T) {

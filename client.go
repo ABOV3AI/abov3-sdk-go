@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/fajardofahad/abov3-sdk-go/internal/requestconfig"
-	"github.com/fajardofahad/abov3-sdk-go/option"
+	"github.com/ABOV3AI/abov3-sdk-go/internal/requestconfig"
+	"github.com/ABOV3AI/abov3-sdk-go/option"
 )
 
 // Client creates a struct with services and top level methods that help with

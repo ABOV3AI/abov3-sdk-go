@@ -8,13 +8,13 @@ import (
 	"net/url"
 	"reflect"
 
-	"github.com/fajardofahad/abov3-sdk-go/internal/apijson"
-	"github.com/fajardofahad/abov3-sdk-go/internal/apiquery"
-	"github.com/fajardofahad/abov3-sdk-go/internal/param"
-	"github.com/fajardofahad/abov3-sdk-go/internal/requestconfig"
-	"github.com/fajardofahad/abov3-sdk-go/option"
-	"github.com/fajardofahad/abov3-sdk-go/packages/ssestream"
-	"github.com/fajardofahad/abov3-sdk-go/shared"
+	"github.com/ABOV3AI/abov3-sdk-go/internal/apijson"
+	"github.com/ABOV3AI/abov3-sdk-go/internal/apiquery"
+	"github.com/ABOV3AI/abov3-sdk-go/internal/param"
+	"github.com/ABOV3AI/abov3-sdk-go/internal/requestconfig"
+	"github.com/ABOV3AI/abov3-sdk-go/option"
+	"github.com/ABOV3AI/abov3-sdk-go/packages/ssestream"
+	"github.com/ABOV3AI/abov3-sdk-go/shared"
 	"github.com/tidwall/gjson"
 )
 

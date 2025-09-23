@@ -11,9 +11,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fajardofahad/abov3-sdk-go"
-	"github.com/fajardofahad/abov3-sdk-go/internal"
-	"github.com/fajardofahad/abov3-sdk-go/option"
+	"github.com/ABOV3AI/abov3-sdk-go"
+	"github.com/ABOV3AI/abov3-sdk-go/internal"
+	"github.com/ABOV3AI/abov3-sdk-go/option"
 )
 
 type closureTransport struct {

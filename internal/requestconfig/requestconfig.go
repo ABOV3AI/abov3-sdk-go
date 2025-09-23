@@ -18,11 +18,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fajardofahad/abov3-sdk-go/internal"
-	"github.com/fajardofahad/abov3-sdk-go/internal/apierror"
-	"github.com/fajardofahad/abov3-sdk-go/internal/apiform"
-	"github.com/fajardofahad/abov3-sdk-go/internal/apiquery"
-	"github.com/fajardofahad/abov3-sdk-go/internal/param"
+	"github.com/ABOV3AI/abov3-sdk-go/internal"
+	"github.com/ABOV3AI/abov3-sdk-go/internal/apierror"
+	"github.com/ABOV3AI/abov3-sdk-go/internal/apiform"
+	"github.com/ABOV3AI/abov3-sdk-go/internal/apiquery"
+	"github.com/ABOV3AI/abov3-sdk-go/internal/param"
 )
 
 func getDefaultHeaders() map[string]string {

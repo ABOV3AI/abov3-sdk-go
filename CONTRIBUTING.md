@@ -41,7 +41,7 @@ To use a local version of this library from source in another project, edit the 
 directive. This can be done through the CLI with the following:
 
 ```sh
-$ go mod edit -replace github.com/fajardofahad/abov3-sdk-go=/path/to/abov3-sdk-go
+$ go mod edit -replace github.com/ABOV3AI/abov3-sdk-go=/path/to/abov3-sdk-go
 ```
 
 ## Running tests

@@ -1,6 +1,6 @@
 # abov3 Go API Library
 
-<a href="https://pkg.go.dev/github.com/fajardofahad/abov3-sdk-go"><img src="https://pkg.go.dev/badge/github.com/fajardofahad/abov3-sdk-go.svg" alt="Go Reference"></a>
+<a href="https://pkg.go.dev/github.com/ABOV3AI/abov3-sdk-go"><img src="https://pkg.go.dev/badge/github.com/ABOV3AI/abov3-sdk-go.svg" alt="Go Reference"></a>
 
 The abov3 Go library provides convenient access to the [abov3 REST API](https://abov3.ai/docs)
 from applications written in Go.
@@ -13,7 +13,7 @@ It is generated with [Stainless](https://www.stainless.com/).
 
 ```go
 import (
-	"github.com/fajardofahad/abov3-sdk-go" // imported as abov3
+	"github.com/ABOV3AI/abov3-sdk-go" // imported as abov3
 )
 ```
 
@@ -24,7 +24,7 @@ Or to pin the version:
 <!-- x-release-please-start-version -->
 
 ```sh
-go get -u 'github.com/fajardofahad/abov3-sdk-go@v0.13.0'
+go get -u 'github.com/ABOV3AI/abov3-sdk-go@v0.13.0'
 ```
 
 <!-- x-release-please-end -->
@@ -44,7 +44,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/fajardofahad/abov3-sdk-go"
+	"github.com/ABOV3AI/abov3-sdk-go"
 )
 
 func main() {
@@ -150,7 +150,7 @@ client.Session.List(context.TODO(), ...,
 )
 ```
 
-See the [full list of request options](https://pkg.go.dev/github.com/fajardofahad/abov3-sdk-go/option).
+See the [full list of request options](https://pkg.go.dev/github.com/ABOV3AI/abov3-sdk-go/option).
 
 ### Pagination
 
@@ -356,7 +356,7 @@ This package generally follows [SemVer](https://semver.org/spec/v2.0.0.html) con
 
 We take backwards-compatibility seriously and work hard to ensure you can rely on a smooth upgrade experience.
 
-We are keen for your feedback; please open an [issue](https://www.github.com/fajardofahad/abov3-sdk-go/issues) with questions, bugs, or suggestions.
+We are keen for your feedback; please open an [issue](https://www.github.com/ABOV3AI/abov3-sdk-go/issues) with questions, bugs, or suggestions.
 
 ## Contributing
 

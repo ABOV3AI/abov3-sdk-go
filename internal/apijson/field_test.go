@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fajardofahad/abov3-sdk-go/internal/param"
+	"github.com/ABOV3AI/abov3-sdk-go/internal/param"
 )
 
 type Struct struct {

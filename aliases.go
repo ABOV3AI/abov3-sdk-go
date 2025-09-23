@@ -3,8 +3,8 @@
 package abov3
 
 import (
-	"github.com/fajardofahad/abov3-sdk-go/internal/apierror"
-	"github.com/fajardofahad/abov3-sdk-go/shared"
+	"github.com/ABOV3AI/abov3-sdk-go/internal/apierror"
+	"github.com/ABOV3AI/abov3-sdk-go/shared"
 )
 
 type Error = apierror.Error

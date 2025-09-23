@@ -13,7 +13,7 @@ import (
 
 	"github.com/tidwall/sjson"
 
-	"github.com/fajardofahad/abov3-sdk-go/internal/param"
+	"github.com/ABOV3AI/abov3-sdk-go/internal/param"
 )
 
 var encoders sync.Map // map[encoderEntry]encoderFunc
