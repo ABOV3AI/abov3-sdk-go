@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.0 (2025-09-26)
+
+Full Changelog: [v0.1.0...v0.2.0](https://github.com/ABOV3AI/abov3-sdk-go/compare/v0.1.0...v0.2.0)
+
+### Features
+
+- **repository:** Migrated to official ABOV3AI organization
+- **docs:** Updated documentation URL to https://www.abov3.ai/docs
+- **imports:** Fixed all import paths to use github.com/ABOV3AI/abov3-sdk-go
+
 ## 0.13.0 (2025-09-14)
 
 Full Changelog: [v0.12.0...v0.13.0](https://github.com/ABOV3AI/abov3-sdk-go/compare/v0.12.0...v0.13.0)
