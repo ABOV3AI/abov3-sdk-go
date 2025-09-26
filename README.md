@@ -2,7 +2,7 @@
 
 <a href="https://pkg.go.dev/github.com/ABOV3AI/abov3-sdk-go"><img src="https://pkg.go.dev/badge/github.com/ABOV3AI/abov3-sdk-go.svg" alt="Go Reference"></a>
 
-The abov3 Go library provides convenient access to the [abov3 REST API](https://abov3.ai/docs)
+The abov3 Go library provides convenient access to the [abov3 REST API](https://www.abov3.ai/docs/index.html)
 from applications written in Go.
 
 It is generated with [Stainless](https://www.stainless.com/).
